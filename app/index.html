@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>famc webapp</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<link href="css/medium.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+		<header>
+		<nav class="mb-1 navbar navbar-expand-lg navbar-dark elegant-color">
+			<div class="container">
+				<a class="navbar-brand" href="#">Loan Officer Scenarios</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown notifications-nav">
+							<a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="badge red">2</span> <i class="fa fa-bell"></i>
+								<span class="d-none d-md-inline-block">Notifications</span>
+							</a>
+							<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item waves-effect waves-light" href="#">
+									<span>Open Quotes</span>
+									<span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 13 min</span>
+								</a>
+								<a class="dropdown-item waves-effect waves-light" href="#">
+									<span>New Customer Response</span>
+									<span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 33 min</span>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link waves-effect waves-light" href="#"><i class="fa fa-gear"></i> Settings</a>
+						</li>
+						<li class="nav-item dropdown avatar profile-nav">
+							<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="https://pbs.twimg.com/profile_images/785889705715904512/LVplqnan_400x400.jpg" class="img-fluid rounded-circle z-depth-0">
+							</a>
+							<div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+								<a class="dropdown-item waves-effect waves-light" href="#">My Account</a>
+								<a class="dropdown-item waves-effect waves-light" href="#">Log Out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section class="z-depth-1 grey lighten-3">
+		<div class="container p-4">			
+			<h3 class="text-left">Tell us what you’re looking for</h3>
+			<div id="nlpForm2" class="mb-3" spellcheck="false" onpaste="pastedContent()"><p></p></div>
+			<div>
+				<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Form View</button>
+				<span class="microphone float-right"><i class="fa fa-microphone fa-3x grey-text" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</section>
+	<section class="z-depth-0 text-center grey lighten-2">
+		<div class="container p-4">			
+			<ul class="list-inline mt-4">
+				<li class="list-inline-item">2 Eligible Products</li>
+				<a><li class="chip grey z-depth-0 text-white">Product 1</li></a>
+				<a><li class="chip grey z-depth-0 text-white">Product 2</li></a>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<div class="container p-4">	
+			<h4 class="text-left text-uppercase">Product Name</h4>
+			<table class="table table-striped click-chart mb-5">
+				<thead class="thead">
+					<tr>
+						<th>Clickable</th>
+						<th>Numbers</th>
+						<th>Chart</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$1,243</td>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>5%</td>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$200,000</td>
+					</tr>
+					<tr>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$2,431</td>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>8%</td>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$500,000</td>
+					</tr>
+					<tr>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$4,321</td>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>15%</td>
+						<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$1,100,000</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="col col-md-12 mb-4">
+				<h4>Here are the scenarios we’re looking at for 2011 W Potomac</h4>
+				<div class="card w-100 mt-4">
+					<div class="card-header elegant-color text-white">
+						READY TO LOCK
+					</div>
+					<div class="card-block p-2">
+
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th>TYPE</th>
+									<th>APR</th>
+									<th>ONE-TIME COSTS</th>
+									<th>PER MONTH</th>
+								</tr>
+							</thead>											
+							<tbody>
+								<tr data-toggle="collapse" data-target="#row1" class="clickable hand">
+									<th scope="row">30-year fixed rate</th>
+									<td>3.875%</td>
+									<td>$2300</td>
+									<td>$1300</td>
+								</tr>
+								<tr class="no-hover"> 
+									<td class="hiddenRow bg-gray" colspan="4">
+										<div id="row1" class="collapse hiddenRowContent px-4 py-4">
+											<table class="table bg-gray mb-5">
+												<tbody>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Home Price</td>
+														<td class="px-4 py-1 text-right">$500,000</td>
+														<td class="px-4 py-1 font-weight-bold">Appraisal Fee</td>
+														<td class="px-4 py-1 text-right">$500</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Down Payment</td>
+														<td class="px-4 py-1 text-right">$100,000</td>
+														<td class="px-4 py-1 font-weight-bold">Title Insurance</td>
+														<td class="px-4 py-1 text-right">$1,000</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">HOA Estimate</td>
+														<td class="px-4 py-1 text-right">$500</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Flood Insurance</td>
+														<td class="px-4 py-1 text-right">$14</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+											<input type="text" class="input-border ml-4" placeholder="Quickly update this price...">
+											<button class="btn">Add</button>
+										</div>
+									</td>
+								</tr>
+								<tr data-toggle="collapse" data-target="#row2" class="clickable hand">
+									<th scope="row">30-year fixed rate </th>
+									<td>3.675%</td>
+									<td>$2300</td>
+									<td>$1200</td>
+								</tr>
+								<tr class="no-hover"> 
+									<td class="hiddenRow bg-gray" colspan="4">
+										<div id="row2" class="collapse hiddenRowContent px-4 py-4">
+											<table class="table bg-gray mb-5">
+												<tbody>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Home Price</td>
+														<td class="px-4 py-1 text-right">$500,000</td>
+														<td class="px-4 py-1 font-weight-bold">Appraisal Fee</td>
+														<td class="px-4 py-1 text-right">$500</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Down Payment</td>
+														<td class="px-4 py-1 text-right">$100,000</td>
+														<td class="px-4 py-1 font-weight-bold">Title Insurance</td>
+														<td class="px-4 py-1 text-right">$1,000</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">HOA Estimate</td>
+														<td class="px-4 py-1 text-right">$500</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Flood Insurance</td>
+														<td class="px-4 py-1 text-right">$14</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+											<input type="text" class="input-border ml-4" placeholder="Quickly update this price...">
+											<button class="btn">Add</button>
+										</div>
+									</td>
+								</tr>
+								<tr data-toggle="collapse" data-target="#row3" class="clickable hand">
+									<th scope="row">15-year fixed rate </th>
+									<td>3.275%</td>
+									<td>$2300</td>
+									<td>$1800</td>
+								</tr>
+								<tr class="no-hover"> 
+									<td class="hiddenRow bg-gray" colspan="4">
+										<div id="row3" class="collapse hiddenRowContent px-4 py-4">
+											<table class="table bg-gray mb-5">
+												<tbody>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Home Price</td>
+														<td class="px-4 py-1 text-right">$500,000</td>
+														<td class="px-4 py-1 font-weight-bold">Appraisal Fee</td>
+														<td class="px-4 py-1 text-right">$500</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Down Payment</td>
+														<td class="px-4 py-1 text-right">$100,000</td>
+														<td class="px-4 py-1 font-weight-bold">Title Insurance</td>
+														<td class="px-4 py-1 text-right">$1,000</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">HOA Estimate</td>
+														<td class="px-4 py-1 text-right">$500</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Flood Insurance</td>
+														<td class="px-4 py-1 text-right">$14</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+											<input type="text" class="input-border ml-4" placeholder="Quickly update this price...">
+											<button class="btn">Add</button>
+										</div>
+									</td>
+								</tr>
+								<tr data-toggle="collapse" data-target="#row4" class="clickable hand">
+									<th scope="row">15-year fixed rate </th>
+									<td>3.175%</td>
+									<td>$2300</td>
+									<td>$1750</td>
+								</tr>
+								<tr class="no-hover"> 
+									<td class="hiddenRow bg-gray" colspan="4">
+										<div id="row4" class="collapse hiddenRowContent px-4 py-4">
+											<table class="table bg-gray mb-5">
+												<tbody>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Home Price</td>
+														<td class="px-4 py-1 text-right">$500,000</td>
+														<td class="px-4 py-1 font-weight-bold">Appraisal Fee</td>
+														<td class="px-4 py-1 text-right">$500</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Down Payment</td>
+														<td class="px-4 py-1 text-right">$100,000</td>
+														<td class="px-4 py-1 font-weight-bold">Title Insurance</td>
+														<td class="px-4 py-1 text-right">$1,000</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">HOA Estimate</td>
+														<td class="px-4 py-1 text-right">$500</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+													<tr class="no-hover">
+														<td class="px-4 py-1 font-weight-bold">Flood Insurance</td>
+														<td class="px-4 py-1 text-right">$14</td>
+														<td class="px-4 py-1 font-weight-bold">&nbsp;</td>
+														<td class="px-4 py-1 text-right">&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+											<input type="text" class="input-border ml-4" placeholder="Quickly update this price...">
+											<button class="btn">Add</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+					<div class="card-footer">
+						<nav class="my-2">
+							<ul class="pagination pg-blue mb-0">
+								<li class="page-item"><a class="page-link">MORE RESULTS</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+	
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Scenario Form</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body p-4">
+					<button class="btn btn-primary">Prepopulate Form</button>
+					<form action="">
+						<div class="row">
+							<div class="col col-12">
+								
+								<div class="md-form">
+									<input type="text" id="form-address" class="form-control">
+									<label for="form-address">Address</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-price" class="form-control">
+									<label for="form-price">Home Price</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-payment" class="form-control">
+									<label for="form-payment">Down Payment</label>
+								</div>
+							</div>
+							<div class="col col-12">
+								<hr>
+							</div>
+							<div class="col col-6">
+								<h5 class="text-underline">Purpose</h5>
+								<div class="form-group">
+									<input name="purpose" type="radio" id="purpose1">
+									<label for="purpose1">Primary</label>
+								</div>
+								<div class="form-group">
+									<input name="purpose" type="radio" id="purpose2">
+									<label for="purpose2">Secondary</label>
+								</div>
+								<div class="form-group">
+									<input name="purpose" type="radio" id="purpose3">
+									<label for="purpose3">Investment</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<h5 class="text-underline">Military</h5>
+								<div class="form-group">
+									<input name="military" type="radio" id="military1">
+									<label for="military1">Yes</label>
+								</div>
+								<div class="form-group">
+									<input name="military" type="radio" id="military2">
+									<label for="military2">No</label>
+								</div>
+							</div>
+							<div class="col col-6 radio-colors">
+								<h5 class="text-underline">FICO</h5>
+								<div class="form-group">
+									<input name="fico" type="radio" id="fico1">
+									<label for="fico1">Excellent: 800-850</label>
+								</div>
+								<div class="form-group">
+									<input name="fico" type="radio" id="fico2">
+									<label for="fico2">Very Good: 740-799</label>
+								</div>
+								<div class="form-group">
+									<input name="fico" type="radio" id="fico3">
+									<label for="fico3">Good: 670-739</label>
+								</div>
+								<div class="form-group">
+									<input name="fico" type="radio" id="fico4">
+									<label for="fico4">Fair: 580-668</label>
+								</div>
+								<div class="form-group">
+									<input name="fico" type="radio" id="fico5">
+									<label for="fico5">Very Poor: 350-579</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<h4 class="text-underline">I plan on staying for awhile</h4>
+								<div class="form-group">
+									<input name="staying" type="radio" id="staying1">
+									<label for="staying1">Under 5 years</label>
+								</div>
+								<div class="form-group">
+									<input name="staying" type="radio" id="staying2">
+									<label for="staying2">Over 5 years</label>
+								</div>
+							</div>
+							<div class="col col-12">
+								<hr>
+							</div>
+							<div class="col col-12">
+								<h4>Monthly Fees</h4>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-taxes" class="form-control">
+									<label for="form-taxes">Taxes</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-mInsurance" class="form-control">
+									<label for="form-mInsurance">Mortgage Insurance</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-insurance" class="form-control">
+									<label for="form-insurance">Insurance</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-hoa" class="form-control">
+									<label for="form-hoa">HOA Dues</label>
+								</div>
+							</div>
+							<div class="col col-12">
+								<hr>
+							</div>
+							<div class="col col-12">
+								<h4>Services You Cannot Shop For</h4>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-appraisal" class="form-control">
+									<label for="form-appraisal">Appraisal Fee</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-credit" class="form-control">
+									<label for="form-credit">Credit Report</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-flood" class="form-control">
+									<label for="form-flood">Flood Certification</label>
+								</div>
+							</div>
+							<div class="col col-12">
+								<hr>
+							</div>
+							<div class="col col-12">
+								<h4>Services You Cannot Shop For</h4>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-tInsurance" class="form-control">
+									<label for="form-tInsurance">Title Insurance</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-tLetter" class="form-control">
+									<label for="form-tLetter">Title Closing Service Letter</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-tSearchFee" class="form-control">
+									<label for="form-tSearchFee">Title Search Fee</label>
+								</div>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-tClosingFee" class="form-control">
+									<label for="form-tClosingFee">Title Settlement Closing Fee</label>
+								</div>
+							</div>
+							<div class="col col-12">
+								<h4>Other</h4>
+							</div>
+							<div class="col col-6">
+								<div class="md-form">
+									<input type="text" id="form-oName" class="form-control">
+									<label for="form-oName">Name</label>
+								</div>
+							</div>
+							<div class="col col-4">
+								<div class="md-form">
+									<input type="text" id="form-oCost" class="form-control">
+									<label for="form-oCost">Cost</label>
+								</div>
+							</div>
+							<div class="col col-2">
+								<button class="btn btn-secondary">Add</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="tab-content text-left">
+		<div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+
+		</div>
+		<div class="tab-pane fade" id="panel2" role="tabpanel">
+			<br>
+		</div>
+	</div>
+</div>
+</section>
+<main>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<textarea rows="30" id="output" class="form-control"></textarea>
+			<div class="col col-md-2 mb-4">
+				<canvas id="doughnutChart"></canvas>
+			</div>
+
+
+			<div class="col-md-6">
+				<textarea rows="5" class="form-control">Customer is purchasing a home in Illinois and looking for a 30 year conventional fixed. They currently live at 1188 Hillcrest Lane Woodridge IL. It’s their primary residence. The purchase price is $500,000 and they can put 20% down.</textarea>
+				<br>
+				<textarea rows="5" class="form-control">Primary Residence. Nashville TN. 15 Year Conventional Fixed. Purchase. Single Family Home. $200k Price. $20,000 down</textarea>
+				<hr>
+			</div>
+			<div class="col-md-6">
+				<h3>Parsed Results</h3>
+				<dl class="dl-horizontal" id="parsedResults">
+					<dt>Property Address</dt>
+					<dd id="tfAddress">&nbsp;</dd>
+
+					<dt>Property City, State</dt>
+					<dd id="tfCityState">&nbsp;</dd>
+
+					<dt>Property ZipCode</dt>
+					<dd id="tfZipCode">&nbsp;</dd>
+
+					<dt>Property County</dt>
+					<dd id="tfCounty">&nbsp;</dd>
+
+					<dt>Product Type</dt>
+					<dd id="tfProductType">&nbsp;</dd>
+
+					<dt>Product Name</dt>
+					<dd id="tfProductName">&nbsp;</dd>
+
+					<dt>Amoritization Term</dt>
+					<dd id="tfLoanTerm">&nbsp;</dd>
+
+					<dt>Loan Purpose</dt>
+					<dd id="tfLoanPurpose">&nbsp;</dd>
+
+					<dt>Property Type</dt>
+					<dd id="tfPropertyType">&nbsp;</dd>
+
+					<dt>Amoritization Type</dt>
+					<dd id="tfLoanType">&nbsp;</dd>
+
+					<dt>Loan Amount</dt>
+					<dd id="tfLoanAmount">&nbsp;</dd>
+
+					<dt>Down Payment Amount</dt>
+					<dd id="tfDownPaymentAmount">&nbsp;</dd>
+
+					<dt>LTV</dt>
+					<dd id="tfLTV"></dd>
+				</dl>
+				<hr>
+				<b>Debugging Information</b><br>
+				<div id="output"></div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col col-md-12">
+				<ul class="nav nav-tabs mx-0 px-0 pb-5" role="tablist">
+					<li class="nav-item active pl-0"><a class="nav-link" data-toggle="tab" href="#openScenarios" role="tab" aria-controls="openScenarios">Open Scenarios</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pastScenarios" role="tab" aria-controls="pastScenarios">Past Scenarios</a></li>
+				</ul>
+				<div class="tab-content px-0">
+					<div class="tab-pane active" id="openScenarios" role="tabpanel">
+						<div class="accordion" id="accOpen" role="tablist" aria-multiselectable="true">
+							<!-- Accordion card -->
+							<div class="card">
+
+								<!-- Card header -->
+								<div class="card-header px-0" role="tab" id="headingOne">
+									<a data-toggle="collapse" data-parent="#accOpen" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="toggler">
+										<span class="row">
+											<span class="col col-2">
+												<span class="icon text-center align-middle"><i class="fa fa-home"></i></span>
+											</span>
+											<span class="col col-8 my-auto">
+												<span>
+													<h4 class="my-0 font-weight-normal">John Geletka &ndash; 2011 W. Potomac, Chicago, IL 60622</h4>
+													<span class="text-uppercase gray">Last edited on 9/29/2017 @ 5:20PM</span>
+												</span>
+											</span>
+											<span class="col col-2 text-right my-auto">
+												<span><i class="fa fa-bell-o mr-1"></i></span><span><i class="fa fa-arrow-circle-o-up"></i></span>
+											</span>
+										</span>
+									</a>
+								</div>
+
+								<!-- Card body -->
+								<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+									<div class="card-body px-0">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+										non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+										3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+										shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+										sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+										farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+										accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<!-- Accordion card -->
+
+							<!-- Accordion card -->
+							<div class="card">
+
+								<!-- Card header -->
+								<div class="card-header px-0" role="tab" id="headingTwo">
+									<a data-toggle="collapse" data-parent="#accOpen" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="toggler">
+										<span class="row">
+											<span class="col col-2 my-auto">
+												<span class="icon text-center align-middle"><i class="fa fa-home"></i></span>
+											</span>
+											<span class="col col-8 my-auto">
+												<span>
+													<h4 class="my-0 font-weight-normal">John Geletka &ndash; 2011 W. Potomac, Chicago, IL 60622</h4>
+													<span class="text-uppercase gray">Last edited on 9/29/2017 @ 5:20PM</span>
+												</span>
+											</span>
+											<span class="col col-2 text-right my-auto">
+												<span><i class="fa fa-bell-o mr-1"></i></span><span><i class="fa fa-arrow-circle-o-up"></i></span>
+											</span>
+										</span>
+									</a>
+								</div>
+
+								<!-- Card body -->
+								<div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+									<div class="card-body px-0">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+										non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+										3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+										shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+										sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+										farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+										accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<!-- Accordion card -->
+						</div>
+					</div>
+					<div class="tab-pane " id="pastScenarios" role="tabpanel">
+
+					</div>
+				</div>
+				<table class="table table-striped click-chart mb-5">
+					<thead class="thead-inverse">
+						<tr>
+							<th>Clickable</th>
+							<th>Numbers</th>
+							<th>Chart</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$1,243</td>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>5%</td>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$200,000</td>
+						</tr>
+						<tr>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$2,431</td>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>8%</td>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$500,000</td>
+						</tr>
+						<tr>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$4,321</td>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>15%</td>
+							<td data-toggle="tooltip" data-html="true" title='<table><thead><tr><td colspan="2">Hover Info</td></tr></thead><tbody><tr><td>Lorem</td><td>$1,234</td></tr><tr><td>Ipsum</td><td>$4,321</td></tr></tbody></table>'>$1,100,000</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col col-12">
+				<h3 class="mb-3">Relevant Content for Retail Loan Officers</h3>
+			</div>
+			<div class="col col-6">
+				<div class="card mb-4">
+					<div class="card-image position-relative">
+						<img src="http://via.placeholder.com/600x300" alt="Placeholder" class="img-fluid">
+						<h4 class="card-title card-title-abs px-4 py-4 mb-0">Self-employed? Here’s how to get a mortgage</h4>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices aliquet mauris id mollis. Mauris ut arcu elementum, molestie urna eu</p>
+						<a href="#" class="read-more text-uppercase">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-6">
+				<div class="card mb-4">
+					<div class="card-image position-relative">
+						<img src="http://via.placeholder.com/600x300" alt="Placeholder" class="img-fluid">
+						<h4 class="card-title card-title-abs px-4 py-4 mb-0">How your credit score affects your mortgage</h4>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices aliquet mauris id mollis. Mauris ut arcu elementum, molestie urna eu</p>
+						<a href="#" class="read-more text-uppercase">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-6">
+				<div class="card mb-4">
+					<div class="card-image position-relative">
+						<img src="http://via.placeholder.com/600x300" alt="Placeholder" class="img-fluid">
+						<h4 class="card-title card-title-abs px-4 py-4 mb-0">Self-employed? Here’s how to get a mortgage</h4>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices aliquet mauris id mollis. Mauris ut arcu elementum, molestie urna eu</p>
+						<a href="#" class="read-more text-uppercase">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-6">
+				<div class="card mb-4">
+					<div class="card-image position-relative">
+						<img src="http://via.placeholder.com/600x300" alt="Placeholder" class="img-fluid">
+						<h4 class="card-title card-title-abs px-4 py-4 mb-0">How your credit score affects your mortgage</h4>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices aliquet mauris id mollis. Mauris ut arcu elementum, molestie urna eu</p>
+						<a href="#" class="read-more text-uppercase">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-12">
+				<h3 class="mb-3 mt-5">Add Relevant Content</h3>
+			</div>
+			<div class="col col-6 mb-4">
+				<div class="card">
+					<div class="row">
+						<div class="col col-4">
+							<img src="http://via.placeholder.com/200x200" alt="Placeholder" class="img-fluid">
+						</div>
+						<div class="col col-8">
+							<div class="card-body px-0">
+								<h4 class="card-title">What's this city stamp tax all about?</h4>
+								<a href="#" class="read-more text-uppercase">Add</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col col-6 mb-4">
+				<div class="card">
+					<div class="row">
+						<div class="col col-4">
+							<img src="http://via.placeholder.com/200x200" alt="Placeholder" class="img-fluid">
+						</div>
+						<div class="col col-8">
+							<div class="card-body px-0">
+								<h4 class="card-title">What's this city stamp tax all about?</h4>
+								<a href="#" class="read-more text-uppercase">Add</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer class="page-footer elegant-color center-on-small-only">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6">
+				<h5 class="title">Lets get this to your customer</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum ultrices sem, eu feugiat dui ultricies eu. Fusce odio libero, suscipit in vehicula vel, mattis eu libero.</p>
+			</div>
+
+			<div class="col-md-6">
+				buttons
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-copyright elegant-color-dark text-left">
+		<div class="container">
+			© 2017 Copyright - Lorem Ipsum
+		</div>
+	</div>
+</footer>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+
+	<script type="text/javascript" src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+	<script type="text/javascript" src="js/jquery.textcomplete.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+	<script type="text/javascript" src="js/rangy-core.js"></script>
+	<script type="text/javascript" src="js/rangy-classapplier.js"></script>
+	<script type="text/javascript" src="js/rangy-selectionsaverestore.js"></script>
+	<script type="text/javascript" src="js/undo.js"></script>
+	<script type="text/javascript" src="js/medium.min.js"></script>
+	<script type="text/javascript" src="js/chart.piecelabel.min.js"></script>
+	<script type="text/javascript" src="js/nlp.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "famc-webapp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "components-font-awesome": "~4.4",
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
